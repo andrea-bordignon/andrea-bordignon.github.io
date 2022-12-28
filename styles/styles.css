@@ -1,0 +1,101 @@
+
+:root {
+	--color1: #4D926F; 
+	--color2: #123456; 
+	--color3: #BBBB11; 
+	--color4: #AAAAAA; 
+
+}
+
+html {
+	font-family: sans-serif;
+}
+
+.pageWrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-areas: "aside main" ;
+	grid-template-columns: max-content;
+	gap: 10px;
+
+}
+
+
+figure {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.headshot img{
+	width: 200px;
+	height: auto;
+}
+
+aside {
+	grid-area:"aside";
+
+	width:220px;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	text-align: center;
+	text-decoration: none;
+	margin: 10px;
+}
+
+nav a:link{
+	color: var(--color1);
+}
+
+nav a:visited{
+	color: var(--color2);
+}
+
+nav a:hover{
+	color: var(--color3);
+}
+
+nav a:active{
+	color: var(--color4);
+
+}
+
+main{ 
+	grid-area:"main";
+	
+	min-width: 300px;
+	padding: 10px;
+
+}
+
+main h2{
+	font-size: x-large;
+}
+
+main a {
+	text-decoration: none;
+	color: blue;
+}
+
+dt {
+	float: left;
+	clear: left;
+	width: 100px;
+	text-align: right;
+}
+dt::after {
+	content: ":";
+}
+dd {
+	margin: 0 0 0 110px;
+	padding: 0 0 0.5em 0;
+}
