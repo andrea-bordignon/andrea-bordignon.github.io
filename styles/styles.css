@@ -1,9 +1,14 @@
 
 :root {
-	--color1: #4D926F; 
-	--color2: #123456; 
-	--color3: #BBBB11; 
-	--color4: #AAAAAA; 
+	--color1: #123456; /*nav a:link*/
+	--color2: #123456; /*nav a:visited*/
+	--color3: #BBBB11; /*nav a:hover*/
+	--color4: #AAAAAA; /*nav a:active*/
+
+	--color5: #123456; /*main a:link*/
+	--color6: #123456; /*main a:visited*/
+	--color7: #BBBB11; /*main a:hover*/
+	--color8: #AAAAAA; /*main a:active*/
 
 }
 
@@ -66,7 +71,6 @@ nav a:hover{
 
 nav a:active{
 	color: var(--color4);
-
 }
 
 main{ 
@@ -84,6 +88,22 @@ main h2{
 main a {
 	text-decoration: none;
 	color: blue;
+}
+
+main a:link{
+	color: var(--color5);
+}
+
+main a:visited{
+	color: var(--color6);
+}
+
+main a:hover{
+	color: var(--color7);
+}
+
+main a:active{
+	color: var(--color8);
 }
 
 dt {
